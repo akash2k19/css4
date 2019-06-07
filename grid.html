@@ -1,0 +1,41 @@
+<title>grid</title>
+<style>
+    body{
+        display: grid;
+        grid-template-areas:
+                "header,header,header"
+                "nav,article,ads"
+                "footer,footer,footer";
+        grid-template-columns: 20% 1fr 15%;
+        grid-template-rows: 60px 1fr 60px;
+        grid-gap: 10px;
+        height: 100vh;
+        margin: 0;
+    }
+    header,footer,article,nav,div{
+        background: darkgoldenrod;
+        padding: 20px;
+    }
+    #pageheader{
+        grid-area: header;
+    }
+    #pagefooter{
+        grid-area: footer;
+    }
+    #mainnav{
+        grid-area: nav;
+    }
+    #mainarticle{
+        grid-area: article;
+    }
+    #siteads{
+        grid-area: ads;
+    }
+</style>
+<body>
+<header id="pageheader">header</header>
+<footer id="pagefooter">footer</footer>
+<nav id="mainnav">nav</nav>
+<article id="mainarticle">article</article>
+<div id="siteads">ads</div>
+</body>

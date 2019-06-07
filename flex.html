@@ -1,0 +1,27 @@
+<title>flex</title>
+<style>
+    .outer-container{
+        background: gold;
+        color: darkgoldenrod;
+        height: 200px;
+        font: 20px sans-serif;
+        display: flex;}
+
+    .box{
+        padding: 20px;
+        flex: 1 0 auto;
+    }
+
+
+    .larger{
+        background: green;
+        flex: 3 0 auto;
+    }
+</style>
+
+<div class="outer-container">
+    <div class="box">box</div>
+    <div class="box larger">larger box</div>
+    <div class="box">box</div>
+    <div class="box larger">larger box</div>
+</div>
